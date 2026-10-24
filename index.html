@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クレーンゲーム</title>
+    <link rel="stylesheet" href="crane-game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 クレーンゲーム 🎮</h1>
+        <div class="controls-info">
+            <p>操作方法:</p>
+            <ul>
+                <li>← → : 左右移動</li>
+                <li>↑ ↓ : 前後移動</li>
+                <li>スペース : クレーンを下ろす</li>
+            </ul>
+        </div>
+        <div class="game-stats">
+            <div>取得した景品: <span id="score">0</span></div>
+            <div>状態: <span id="status">操作中</span></div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Matter.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="crane-game.js"></script>
+</body>
+</html>
